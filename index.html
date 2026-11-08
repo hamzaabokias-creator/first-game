@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/output.css" rel="stylesheet" />
+    <title>guess the word game</title>
+  </head>
+
+  <body class="bg-gray-200">
+    <h1 class="text-3xl text-center bg-black/60 p-5">guess the word game</h1>
+    <div class="guess-game p-2.5">
+      <div class="">
+        <h2>Key colors</h2>
+        <div class="flex justify-start items-center gap-2.5">
+          <div class="w-4 h-4 bg-green-500 rounded-[50%]"></div>
+          <div class="key-text">letter is correct and in the right place</div>
+        </div>
+        <div class="flex justify-start items-center gap-2.5">
+          <div class="w-4 h-4 bg-yellow-500 rounded-[50%]"></div>
+          <div class="key-text">letter is correct but in the wrong place</div>
+        </div>
+        <div class="flex justify-start items-center gap-2.5">
+          <div class="w-4 h-4 bg-red-500 rounded-[50%]"></div>
+          <div class="key-text">letter is not present in the word</div>
+        </div>
+      </div>
+    </div>
+    <!-- game area -->
+    <div class="game-area m-2.5">
+      <!-- input area : the place where we put the letters-->
+      <div class="input"></div>
+      <!-- controls area : the two buttons : check and hint -->
+      <div class="controls flex justify-evenly m-2.5">
+        <button class="check cursor-pointer" id="check">Check</button>
+        <button class="hint cursor-pointer"><span></span>Hint</button>
+      </div>
+      <!-- result area : the place where we show the result of our game -->
+      <!-- key colors area : every color and what it means in the game -->
+    </div>
+
+    <footer></footer>
+    <script src="main.js"></script>
+  </body>
+</html>
+
+<!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch -->
